@@ -65,6 +65,27 @@ h1{
     padding-top: 20px;
 }
 
+.verk{
+    display: flex;
+    flex-direction: column;
+}
+
+.romaner{
+    display: flex;
+}
+
+.diktsamlingar{
+    display: flex;
+}
+
+.novellsamlingar{
+    display: flex;
+}
+
+.essaer{
+    display: flex;
+}
+
 .clear { 
     clear: both; 
     height: 80px; 
