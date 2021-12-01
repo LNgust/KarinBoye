@@ -11,6 +11,23 @@
 <body>
     <div class="header">
         <div class="navigation">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" /> <!--used as reciever, hidden with css-->
+
+                  <span class="burger"></span> <!--spans as hamburger-->
+                  <span class="burger"></span>
+                  <span class="burger"></span>
+
+                  <ul id="menu"> <!--shows when hamburger is clicked-->
+                    <a href="startsida.html"><li>Startsida</li></a>
+                    <a href="verk.html"><li>Verk</li></a>
+                    <a href="kontakt.html"><li>Kontakta Oss</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                  </ul>
+                </div>
+            </nav>
             <a class = "navigationLinks" href="startsida.html">Startsida</a>
             <a class = "navigationLinks" href="verk.html">Verk</a>
             <a class = "navigationLinks" href="kontakt.html">Kontakta oss</a>
@@ -21,36 +38,45 @@
 
     <div class="verk">
         <div class="romaner">
-            <h2>Romaner</h2>
-            <button class="btnRomaner" type = "button">Astarte</button>
-            <button class="btnRomaner" type = "button">Merit Vaknar</button>
-            <button class="btnRomaner" type = "button">Kris</button>
-            <button class="btnRomaner" type = "button">För Lite</button>
-            <button class="btnRomaner" type = "button">Kallokain</button>
+            <div class="romanerText"><h2>Romaner</h2></div>
+            <div class="btnAll">
+                <button class="btnRomaner" type = "button">Astarte</button>
+                <button class="btnRomaner" type = "button">Merit Vaknar</button>
+                <button class="btnRomaner" type = "button">Kris</button>
+                <button class="btnRomaner" type = "button">För Lite</button>
+                <button class="btnRomaner" type = "button">Kallokain</button>
+            </div>
         </div>
 
         <div class="diktsamlingar">
-            <h2>Diktsamlingar</h2>
-            <button class="btnDiktsamlingar" type = "button">Moln</button>
-            <button class="btnDiktsamlingar" type = "button">Gömda Land</button>
-            <button class="btnDiktsamlingar" type = "button">Härdarna</button>
-            <button class="btnDiktsamlingar" type = "button">För Trädets Skull</button>
-            <button class="btnDiktsamlingar" type = "button">De Sju Dödsynderna Och Andra Dikter</button>
+            <div><h2>Diktsamlingar</h2></div>
+            <div>
+                <button class="btnDiktsamlingar" type = "button">Moln</button>
+                <button class="btnDiktsamlingar" type = "button">Gömda Land</button>
+                <button class="btnDiktsamlingar" type = "button">Härdarna</button>
+                <button class="btnDiktsamlingar" type = "button">För Trädets Skull</button>
+                <button class="btnDiktsamlingar" type = "button">De Sju Dödsynderna <br> Och Andra Dikter</button>
+            </div>
         </div>
 
         <div class="novellsamlingar">
-            <h2>Novellsamlingar</h2>
-            <button class="btnNovellsamlingar" type = "button">Uppgörelse</button>
-            <button class="btnNovellsamlingar" type = "button">Ur Funktion</button>
-            <button class="btnNovellsamlingar" type = "button">Bebådelse</button>
+            <div><h2>Novellsamlingar</h2></div>
+            <div>
+                <button class="btnNovellsamlingar" type = "button">Uppgörelse</button>
+                <button class="btnNovellsamlingar" type = "button">Ur Funktion</button>
+                <button class="btnNovellsamlingar" type = "button">Bebådelse</button>
+            </div>
         </div>
 
         <div class="essaer">
-            <h2>Essäer</h2>
-            <button class="btnEssaer" type = "button">Språket Bakom Logiken</button>
+            <div><h2>Essäer</h2></div>
+            <div>
+                <button class="btnEssaer" type = "button">Språket Bakom Logiken</button>
+            </div>
         </div>
     </div>
     
+    <div class="clear"></div>
 
     <footer class="footer">
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>

@@ -17,16 +17,12 @@ html {
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    background: transparent;
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background:crimson;
 }
 
 .header{
@@ -35,12 +31,127 @@ html {
     height: 170px;
 }
 
+#menuToggle{
+  display: block;
+  position: relative;
+  top: 0;
+  left: 5px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover{
+  color: crimson;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  opacity: 0; /* hides checkbox */
+  z-index: 2; /* places it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:white;
+  border-radius: 2px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%; /*rotatepoint in the first span*/
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%; /*rotate point in the last span*/
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px); /*turns first span*/
+  background: black;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0; /*hides middle span*/
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu{
+  position: absolute;
+  width: 300px;
+  height: 1000px;
+  margin: -100px 0 0 -50px;
+  padding: 30px;
+  padding-top: 125px;
+  
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
+
 .navigation{
     background-color: black;
     display: flex;
     height: 45px;
     padding-top: 2.5px;
-    padding-left: 30%;
     padding-right: 30%;
     align-items: center;
     justify-content: space-between;
@@ -68,22 +179,77 @@ h1{
 .verk{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.verk div{
+    margin-top: 30px;
+    text-align: center;
+}
+
+button{
+    border: hidden;
 }
 
 .romaner{
     display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+    background: crimson;
+    border-radius: 5px;
+}
+
+.btnRomaner{
+    color: black;
+    background-color: white;
+    height: 35px;
+    width: 17%;
 }
 
 .diktsamlingar{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: crimson;
+    border-radius: 5px;
+}
+
+.btnDiktsamlingar{
+    color: black;
+    background-color: white;
+    height: 35px;
+    width: 17%;
 }
 
 .novellsamlingar{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: crimson;
+    border-radius: 5px;
+}
+
+.btnNovellsamlingar{
+    color: black;
+    background-color: white;
+    height: 35px;
+    width: 30%;
 }
 
 .essaer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: crimson;
+    border-radius: 5px;
+}
+
+.btnEssaer{
+    color: black;
+    background-color: white;
+    height: 35px;
+    width: 80%;
 }
 
 .clear { 
@@ -119,4 +285,36 @@ h1{
     width: 40%;
     color: white;
     font-size: 12px;
+}
+
+.form{
+    margin: 20px 0 20px 15%; 
+    background: crimson;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 70%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+input[type=submit] {
+    background-color: crimson;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
 }

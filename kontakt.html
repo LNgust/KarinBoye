@@ -11,6 +11,21 @@
 <body>
     <div class="header">
         <div class="navigation">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" /> <!--used as reciever, hidden with css-->
+
+                  <span class="burger"></span> <!--spans as hamburger-->
+                  <span class="burger"></span>
+                  <span class="burger"></span>
+
+                  <ul id="menu"> <!--shows when hamburger is clicked-->
+                    <a href="startsida.html"><li>Startsida</li></a>
+                    <a href="verk.html"><li>Verk</li></a>
+                    <a href="kontakt.html"><li>Kontakta Oss</li></a>
+                  </ul>
+                </div>
+            </nav>
             <a class = "navigationLinks" href="startsida.html">Startsida</a>
             <a class = "navigationLinks" href="verk.html">Verk</a>
             <a class = "navigationLinks" href="kontakt.html">Kontakta oss</a>
@@ -19,6 +34,30 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, sint.</p>
     </div>
 
+    <div class="form">
+        <form action="action_page.php">
+      
+            <div>
+                <label for="name">Namn:</label> <br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+      
+          <div>
+            <label for="email">Email:</label> <br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+      
+          <div>
+            <label for="subject">Subject</label> <br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+    </div>
+
+    <div class="clear"></div>
     
     <footer class="footer">
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>
