@@ -127,8 +127,7 @@ html {
   
   background: white;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -327,4 +326,9 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: black;
+}
+
+.menuVerk{
+    color: crimson;
+    font-size: 15px;
 }

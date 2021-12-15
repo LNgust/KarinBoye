@@ -14,17 +14,16 @@
             <nav role="navigation">
                 <div id="menuToggle">
                   <input type="checkbox" /> <!--used as reciever, hidden with css-->
-
+                  
                   <span class="burger"></span> <!--spans as hamburger-->
                   <span class="burger"></span>
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
                     <a href="startsida.html"><li>Startsida</li></a>
-                    <a href="verk.html"><li>Verk</li></a>
+                    <a href="verk.html"><li onmouseover="addLiVerk()" onmouseout="deleteChild()">Verk</li></a>
+                    <ul id="menuVerk" class="menuVerk"></ul>
                     <a href="kontakt.html"><li>Kontakta Oss</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
                   </ul>
                 </div>
             </nav>
@@ -36,28 +35,25 @@
         <p>Här hittar du en lista av alla verk som skrivits av Karin Boye</p>
     </div>
 
-    <a href="astarte.html">Continue</a>
-
     <div class="verk">
         <div class="romaner">
             <div class="romanerText"><h2>Romaner</h2></div>
             <div class="btnAll">
-                <a href="astarte.html"><button id="btnAstarte" class="btnRomaner" type = "button">Astarte</button></a>
-                <a href=""></a><button class="btnRomaner" type = "button">Merit Vaknar</button>
-                <button class="btnRomaner" type = "button">Kris</button>
-                <button class="btnRomaner" type = "button">För Lite</button>
-                <button class="btnRomaner" type = "button">Kallokain</button>
+                <a href="romaner/astarte.html"><button id="btnAstarte" class="btnRomaner" type = "button">Astarte</button></a>
+                <a href="romaner/meritVaknar.html"><button class="btnRomaner" type = "button">Merit Vaknar</button></a>
+                <a href="romaner/kris.html"><button class="btnRomaner" type = "button">Kris</button></a>
+                <a href="romaner/forLite.html"><button class="btnRomaner" type = "button">För Lite</button></a>
+                <a href="romaner/kallokain.html"><button class="btnRomaner" type = "button">Kallokain</button></a>
             </div>
         </div>
 
         <div class="diktsamlingar">
             <div><h2>Diktsamlingar</h2></div>
             <div>
-                <button class="btnDiktsamlingar" type = "button">Moln</button>
-                <button class="btnDiktsamlingar" type = "button">Gömda Land</button>
-                <button class="btnDiktsamlingar" type = "button">Härdarna</button>
-                <button class="btnDiktsamlingar" type = "button">För Trädets Skull</button>
-                <button class="btnDiktsamlingar" type = "button">De Sju Dödsynderna <br> Och Andra Dikter</button>
+                <a href="dikter/moln.html"><button class="btnDiktsamlingar" type = "button">Moln</button></a>
+                <a href="dikter/gomdaLand.html"><button class="btnDiktsamlingar" type = "button">Gömda Land</button></a>
+                <a href="dikter/hardarna.html"><button class="btnDiktsamlingar" type = "button">Härdarna</button></a>
+                <a href="dikter/forTradetsSkull.html"><button class="btnDiktsamlingar" type = "button">För Trädets Skull</button></a>
             </div>
         </div>
 
@@ -84,5 +80,7 @@
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>
         <p class = "footerText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis accusantium sunt maiores officia pariatur quod omnis! Non saepe quos fuga, soluta nam, esse laborum vitae sunt culpa eveniet quo molestiae. Ex expedita ipsam, at fugit dicta nulla vel magni!</p>
     </footer>
+
+    <script src="karinBoye.js"></script>
 </body>
 </html>
