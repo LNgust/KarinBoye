@@ -212,6 +212,7 @@ button{
     justify-content: center;
     background: crimson;
     border-radius: 5px;
+    padding: 30px 10px 30px 10px;
 }
 
 .btnDiktsamlingar{
@@ -227,6 +228,7 @@ button{
     justify-content: center;
     background: crimson;
     border-radius: 5px;
+    padding: 30px 10px 30px 10px;
 }
 
 .btnNovellsamlingar{
@@ -242,6 +244,7 @@ button{
     justify-content: center;
     background: crimson;
     border-radius: 5px;
+    padding: 30px 10px 30px 10px;
 }
 
 .btnEssaer{
