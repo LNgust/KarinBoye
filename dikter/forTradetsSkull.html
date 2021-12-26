@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         <div class="navigation">
-            <nav role="navigation">
+            <nav>
                 <div id="menuToggle">
                   <input type="checkbox" /> <!--used as reciever, hidden with css-->
 
@@ -20,20 +20,31 @@
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
-                    <a href="../startsida.html"><li>Startsida</li></a>
-                    <a href="../verk.html"><li>Verk</li></a>
-                    <a href="../kontakt.html"><li>Kontakta Oss</li></a>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li onmouseover="addLiVerk()" onmouseout="deleteChild()"><a href="verk.html">Verk</a></li>
+                    <li>
+                        <ul id="menuVerk" class="menuVerk"></ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakta Oss</a></li>
                   </ul>
                 </div>
             </nav>
-            <a class = "navigationLinks" href="../startsida.html">Startsida</a>
+            <a class = "navigationLinks" href="../index.html">Startsida</a>
             <a class = "navigationLinks" href="../verk.html">Verk</a>
             <a class = "navigationLinks" href="../kontakt.html">Kontakta oss</a>
         </div>
         <h1>För Trädets Skull</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, sint.</p>
+        <p>Diktsamling skriven av Karin Boye utgiven år 1940</p>
     </div>
 
+    <div class="info">
+        <div class="infoText">
+            <h2>Sammanfattning</h2>
+            <p>
+                Diktsamlingen För trädets skull utkom för första gången 1935 och innehåller hennes berömda dikt ”Ja visst gör det ont när knoppar brister”. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas sit voluptatem enim pariatur reprehenderit, voluptatibus quibusdam explicabo quo commodi fugiat iure, cumque nesciunt recusandae aliquid sequi quas. Inventore repellendus optio illo corrupti quisquam magni, natus necessitatibus id? Eveniet repellendus et voluptatibus corrupti non assumenda eligendi laboriosam, ut ad architecto odit cumque voluptatem laudantium debitis qui fuga itaque recusandae, dignissimos illum quibusdam pariatur, porro autem maiores! Odio hic, numquam maiores omnis iure dignissimos porro provident ea necessitatibus consequatur quibusdam dolores eos ipsam incidunt eveniet vero ducimus accusantium suscipit corporis laudantium corrupti quo! Possimus facere temporibus nostrum explicabo deserunt, laudantium quis delectus, nobis reprehenderit repellendus ipsam ab, fugit eius quod repellat. Maxime repellat quaerat enim, cupiditate culpa corrupti officia magnam et quae dolorem ipsum laborum, vero quibusdam aliquam non porro minima laudantium exercitationem? Rem doloribus quod ratione reprehenderit beatae aliquam dolorum rerum dolor at minus non esse error tenetur odio perspiciatis impedit quia suscipit voluptas, alias voluptatem iste necessitatibus sunt laboriosam? Voluptatum delectus natus veniam qui nesciunt excepturi eveniet nemo earum autem, repellat omnis maiores, beatae odit doloribus cupiditate mollitia molestias. Natus voluptatem rem dolorem pariatur, facilis voluptatibus. Quis porro assumenda quaerat ad quasi in dignissimos maiores non expedita dolore numquam, minus mollitia. Quisquam iste quasi excepturi autem facilis ad tempora dolores dicta ducimus repellat sunt quo quam rerum quibusdam minus, nisi voluptatibus ullam obcaecati eum est doloremque? Minus, quas quibusdam blanditiis, ad obcaecati aperiam iure commo.</p>
+        </div>
+        <img src="FTS.jpg" alt="FTSBild">
+    </div>
 
     <div class="clear"></div>
 
@@ -41,5 +52,7 @@
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>
         <p class = "footerText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis accusantium sunt maiores officia pariatur quod omnis! Non saepe quos fuga, soluta nam, esse laborum vitae sunt culpa eveniet quo molestiae. Ex expedita ipsam, at fugit dicta nulla vel magni!</p>
     </footer>
+
+    <script src="../karinBoye.js"></script>
 </body>
 </html>

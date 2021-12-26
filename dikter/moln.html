@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         <div class="navigation">
-            <nav role="navigation">
+            <nav>
                 <div id="menuToggle">
                   <input type="checkbox" /> <!--used as reciever, hidden with css-->
 
@@ -20,20 +20,31 @@
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
-                    <a href="../startsida.html"><li>Startsida</li></a>
-                    <a href="../verk.html"><li>Verk</li></a>
-                    <a href="../kontakt.html"><li>Kontakta Oss</li></a>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li onmouseover="addLiVerk()" onmouseout="deleteChild()"><a href="verk.html">Verk</a></li>
+                    <li>
+                        <ul id="menuVerk" class="menuVerk"></ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakta Oss</a></li>
                   </ul>
                 </div>
             </nav>
-            <a class = "navigationLinks" href="../startsida.html">Startsida</a>
+            <a class = "navigationLinks" href="../index.html">Startsida</a>
             <a class = "navigationLinks" href="../verk.html">Verk</a>
             <a class = "navigationLinks" href="../kontakt.html">Kontakta oss</a>
         </div>
         <h1>Moln</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, sint.</p>
+        <p>Diktsamling skriven av Karin Boye utgiven år 1924</p>
     </div>
 
+    <div class="info">
+        <div class="infoText">
+            <h2>Sammanfattning</h2>
+            <p>
+                ”Jag drömde om svärd i natt. Jag drömde om strid i natt.” (ur Sköldmön)Glömda land gavs ut första gången 1924 och är Karin Boyes andra diktsamling efter debuten Moln (1922) . Den innehåller bland annat dikterna Sköldmön och Önskan ("Ack låt mig leva riktigt och riktigt dö en gång..."). Karin Boye (1900-1941) är en av de stora svenska författarna – en utpräglat tidsmedveten och politiskt radikal berättare som tog upp kampen mot fördomar, kvinnoförtryck, krig och diktatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste in nesciunt praesentium cumque neque possimus perspiciatis aliquam commodi blanditiis. Qui officiis praesentium provident voluptas voluptate commodi dignissimos vitae nihil aut cupiditate vel, mollitia eligendi esse laboriosam quo amet quas culpa voluptatum quam incidunt rem enim totam? Amet doloremque repudiandae quam eligendi praesentium temporibus, doloribus reprehenderit obcaecati! Debitis, earum exercitationem soluta repellendus mollitia accusantium quae modi? Cumque rem pariatur porro fugiat voluptatem debitis accusamus quis doloremque odit ea sed, necessitatibus ipsam. Rerum fuga doloremque commodi omnis deleniti vel aliquid animi blanditiis qui, et voluptate iste veritatis culpa voluptas aperiam. Aliquam?</p>
+        </div>
+        <img src="moln.jpg".jpg" alt="Bild">
+    </div>
 
     <div class="clear"></div>
 
@@ -41,5 +52,7 @@
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>
         <p class = "footerText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis accusantium sunt maiores officia pariatur quod omnis! Non saepe quos fuga, soluta nam, esse laborum vitae sunt culpa eveniet quo molestiae. Ex expedita ipsam, at fugit dicta nulla vel magni!</p>
     </footer>
+
+    <script src="../karinBoye.js"></script>
 </body>
 </html>

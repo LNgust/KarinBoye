@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,14 @@
     <meta name="theme-color" content="#f0f0f0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="book-icon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-skyblue.min.css">
     <title>Karin Boye</title>
 </head>
 <body>
 
     <div class="header">
         <div class="navigation">
-            <nav role="navigation">
+            <nav>
                 <div id="menuToggle">
                   <input type="checkbox"/> <!--used as reciever, hidden with css-->
 
@@ -23,13 +23,16 @@
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
-                    <a href="index.html"><li>Startsida</li></a>
-                    <a href="verk.html"><li>Verk</li></a>
-                    <a href="kontakt.html"><li>Kontakta Oss</li></a>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li onmouseover="addLiVerk()" onmouseout="deleteChild()"><a href="verk.html">Verk</a></li>
+                    <li>
+                        <ul id="menuVerk" class="menuVerk"></ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakta Oss</a></li>
                   </ul>
                 </div>
               </nav>
-            <a class = "navigationLinks" href="startsida.html">Startsida</a>
+            <a class = "navigationLinks" href="index.html">Startsida</a>
             <a class = "navigationLinks" href="verk.html">Verk</a>
             <a class = "navigationLinks" href="kontakt.html">Kontakta oss</a>
         </div>
@@ -41,7 +44,7 @@
         <div class="introduction">
             <div class="introductionText">
                 <h2>Introduktion</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates praesentium ad ut officia! Quaerat, sunt distinctio iste repudiandae quasi dolorum sequi iusto omnis temporibus fugit ex. Suscipit temporibus id, nesciunt fuga numquam ad voluptate. Molestias, fuga dicta reiciendis numquam odit incidunt nihil accusamus aut harum neque. Deleniti doloremque accusamus nisi quidem sit reiciendis nesciunt quia facere, aperiam voluptates suscipit possimus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates praesentium ad ut officia! Quaerat, sunt distinctio iste repudiandae quasi dolorum sequi iusto omnis temporibus fugit ex. Suscipit temporibus id, nesciunt fuga numquam ad voluptate. Molestias, fuga dicta reiciendis numquam odit incidunt nihil accusamus aut harum neque. Deleniti doloremque accusamus nisi quidem sit reiciendis nesciunt quia facere, aperiam voluptates suscipit possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam saepe tempore magni, minus voluptas ab quaerat porro in totam inventore veritatis delectus deleniti doloribus. Amet culpa provident laudantium rerum et quasi rem at quisquam repellat voluptates doloremque aperiam, pariatur recusandae explicabo libero? Impedit laborum accusamus rem? Adipisci deserunt tempora error quae repellendus ut culpa molestiae autem, impedit eveniet. Cupiditate sequi ex beatae rem amet consectetur quaerat a consequatur ipsam, hic repellendus facilis nisi voluptatibus qui expedita, eligendi nostrum. Id ad voluptatibus velit deleniti, dolore est voluptatem, totam harum odio soluta sequi, qui commodi architecto officia error placeat corporis cumque.</p>
             </div>
 
             <div class="splide">
@@ -52,21 +55,19 @@
                           <li class="splide__slide"><img src="splidejs/karinBoye3.jpg" alt="img3"></li>
                       </ul>
                 </div>
-              </div>
+            </div>
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequuntur fugiat dolorum mollitia architecto nihil repellendus ut laboriosam deserunt quod, eligendi expedita quam molestias? Facilis ad quos quisquam possimus architecto? Itaque delectus veritatis ad praesentium alias? Recusandae veritatis ad culpa voluptatem et quisquam, deserunt ducimus! Odit quod optio reiciendis recusandae consequuntur culpa amet voluptate minus odio numquam. Maiores, nesciunt! Debitis, nostrum. Ea architecto blanditiis temporibus quisquam ad commodi beatae assumenda dolor, asperiores exercitationem corporis suscipit eos, labore laborum ipsum laboriosam, quam fugiat explicabo consectetur! Reprehenderit, molestiae voluptatem! Deserunt vitae doloremque sunt quas sequi ab, ipsam ea, dolor repellat praesentium ipsa, pariatur veniam quam maxime voluptates at eligendi! Optio voluptates inventore nemo tenetur maiores quo repellendus quaerat molestias id voluptatibus deserunt, vitae debitis alias sequi quibusdam consectetur nesciunt. Facere ex, dolor temporibus commodi doloremque expedita veritatis distinctio dolorem quas enim harum non dignissimos, repellendus possimus, deleniti a. Temporibus, illum accusantium perspiciatis saepe iure et quo quam laborum in ducimus iusto ipsam aspernatur, dicta unde architecto quia! Fugit doloremque rerum doloribus molestiae voluptas tempore, labore optio id vel autem quas perspiciatis quia corporis repellat eos perferendis! Dolore accusantium expedita libero animi. Ut ipsum quas perspiciatis expedita quidem perferendis nemo explicabo temporibus rerum.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nostrum voluptates assumenda incidunt consequatur explicabo. Exercitationem omnis corrupti, corporis dolorem nesciunt inventore facilis non provident nobis fuga illum doloribus quae earum eveniet quas ex beatae culpa vero impedit, blanditiis maxime sint, ullam est numquam? Expedita vel fuga molestiae, incidunt consectetur dolor hic dolore velit aliquam quae vitae, fugiat aut doloremque explicabo ea saepe sint inventore a, doloribus nesciunt eum amet quod commodi enim? Voluptas placeat, quis sit quo alias, quam omnis doloremque, numquam nesciunt vitae totam quibusdam rem delectus voluptates facere cupiditate quasi repudiandae ab autem cumque. Fuga, magnam quas?</p>
 
         <div class="kandaVerk">
             <h2>Kända Verk</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto et magni eius sed quia atque reprehenderit, sequi recusandae voluptatibus mollitia neque error rerum unde perspiciatis dolorum modi quisquam numquam. Fugit, natus neque ea in est iste quas soluta perspiciatis? Nisi possimus rerum dolores aliquid ipsum minus omnis facilis ullam, ad dolore repellat neque amet ab adipisci voluptatem magnam laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto et magni eius sed quia atque reprehenderit, sequi recusandae voluptatibus mollitia neque error rerum unde perspiciatis dolorum modi quisquam numquam. Fugit, natus neque ea in est iste quas soluta perspiciatis? Nisi possimus rerum dolores aliquid ipsum minus omnis facilis ullam, ad dolore repellat neque amet ab adipisci voluptatem magnam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus dolor, reprehenderit doloremque beatae sint minus. Inventore blanditiis reiciendis cum vitae dolores ullam ipsa, exercitationem doloremque perferendis eveniet vero velit deleniti pariatur, accusantium neque soluta! Dolor sed laudantium quam voluptatum incidunt rerum recusandae iure delectus, magni est eveniet fugiat itaque placeat, laboriosam aliquid animi. Accusantium minus reprehenderit, magnam ipsa totam nihil suscipit natus culpa sequi quidem distinctio expedita, ab iusto odit, consequatur ex. Totam labore maxime, alias id natus maiores cupiditate commodi dicta doloribus error. Ullam voluptate doloribus ratione? At aliquid fugit excepturi dolores consequatur dignissimos dolorem perferendis incidunt quia aperiam magni tenetur et repellendus omnis ullam quisquam expedita, quas perspiciatis impedit ipsum. Nulla illum reiciendis quisquam, numquam magni optio ipsa dignissimos, similique ea nihil fugiat illo atque quis cupiditate dolore sint est mollitia voluptatibus, vel distinctio id. Earum ipsum aspernatur tempora provident. Nisi asperiores eveniet recusandae doloremque architecto dolore deserunt ipsa sed, minima atque beatae optio odio placeat voluptatem distinctio dolores! Quidem culpa repellendus nisi perspiciatis dolores fugiat sapiente nobis molestias iusto eum sunt id laboriosam accusantium qui aliquid, numquam magnam odit et tenetur pariatur quo tempora itaque ullam corrupti. Culpa eaque distinctio iste laborum sequi obcaecati consequatur dolorem.</p>
         </div>
 
         <div class="titel">
             <h2>Titel</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad enim voluptate nemo non, corrupti, alias consectetur odio corporis magni exercitationem officia illo, culpa cupiditate repudiandae. Vitae corporis laborum iste architecto numquam fugit, assumenda, molestiae, similique animi dicta consequuntur vel! Libero impedit suscipit esse, nihil beatae repellat reiciendis porro repudiandae fugit voluptate eos maiores inventore illo iusto. Ipsum, dignissimos id.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad enim voluptate nemo non, corrupti, alias consectetur odio corporis magni exercitationem officia illo, culpa cupiditate repudiandae. Vitae corporis laborum iste architecto numquam fugit, assumenda, molestiae, similique animi dicta consequuntur vel! Libero impedit suscipit esse, nihil beatae repellat reiciendis porro repudiandae fugit voluptate eos maiores inventore illo iusto. Ipsum, dignissimos id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quidem doloribus voluptatem temporibus assumenda quia sed deserunt, soluta reiciendis nostrum tenetur, dolore placeat velit expedita sit? Itaque aliquid animi commodi, a cupiditate atque culpa velit neque delectus nesciunt corrupti in, saepe eaque. Fuga facere repudiandae sed ipsum minima similique iure!</p>
         </div>
     </div>
 
@@ -77,6 +78,8 @@
         <p class = "footerText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis accusantium sunt maiores officia pariatur quod omnis! Non saepe quos fuga, soluta nam, esse laborum vitae sunt culpa eveniet quo molestiae. Ex expedita ipsam, at fugit dicta nulla vel magni!</p>
     </footer>
 
+
+    <script src="karinBoye.js"></script> <!--have to be here or else will show error--> 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.cjs.min.js"></script>
     
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         <div class="navigation">
-            <nav role="navigation">
+            <nav>
                 <div id="menuToggle">
                   <input type="checkbox" /> <!--used as reciever, hidden with css-->
 
@@ -20,10 +20,12 @@
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
-                    <a href="index.html"><li>Startsida</li></a>
-                    <a href="verk.html"><li onmouseover="addLiVerk()" onmouseout="deleteChild()">Verk</li></a>
-                    <ul id="menuVerk" class="menuVerk"></ul>
-                    <a href="kontakt.html"><li>Kontakta Oss</li></a>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li onmouseover="addLiVerk()" onmouseout="deleteChild()"><a href="verk.html">Verk</a></li>
+                    <li>
+                        <ul id="menuVerk" class="menuVerk"></ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakta Oss</a></li>
                   </ul>
                 </div>
             </nav>
@@ -35,22 +37,28 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, sint.</p>
     </div>
 
+
+    <div class="omOss">
+      <h2 class="omOssText">Om Oss</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dignissimos mollitia beatae animi aliquam molestiae ut officiis, maiores in odio fugit, aspernatur nulla enim non rerum itaque dolorem molestias quam iste dolore corporis sit labore? Beatae accusantium ipsum adipisci doloribus! Ea laboriosam incidunt repellat aperiam sapiente accusamus itaque, perspiciatis saepe suscipit facilis expedita aspernatur molestiae aliquid cumque optio quaerat minima quo, officiis commodi quis. Sit, sint ea nisi harum atque blanditiis nemo aperiam corporis dolore porro recusandae magnam placeat, eos neque exercitationem quidem? Hic at inventore eos harum non? Quos corrupti labore quisquam ut quia repellendus odit facere asperiores, voluptas distinctio id officia quidem eius unde enim est. Cupiditate labore a et maxime, voluptatibus, officiis illum nesciunt, perferendis modi veniam vitae? Enim ad sit totam autem asperiores illo pariatur, laboriosam inventore consectetur cumque architecto sed beatae fugiat accusamus rerum amet labore dolor doloribus unde hic officia numquam? Nisi, perspiciatis cupiditate voluptates totam tempore deserunt asperiores aliquam! Ea porro at fugit hic temporibus, ad neque maiores maxime asperiores quos voluptatibus sequi laboriosam error laborum laudantium eveniet quod aut, praesentium ipsum expedita, tempore voluptas optio ex exercitationem? Error optio unde similique, dicta doloremque ea. Dolor accusamus cum, veritatis quo nam amet minima!</p>
+    </div>
+
     <div class="form">
         <form action="action_page.php">
       
           <div>
               <label for="name">Namn:</label> <br>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="name" name="name" placeholder="Ditt namn..">
           </div>
       
           <div>
             <label for="email">Email:</label> <br>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="email" name="email" placeholder="adress@mail.com">
           </div>
       
           <div>
             <label for="subject">Meddelande</label> <br>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Meddelande.." style="height:200px"></textarea>
           </div>
       
           <input type="submit" value="Skicka">

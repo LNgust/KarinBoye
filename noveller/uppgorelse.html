@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         <div class="navigation">
-            <nav role="navigation">
+            <nav>
                 <div id="menuToggle">
                   <input type="checkbox" /> <!--used as reciever, hidden with css-->
 
@@ -20,26 +20,29 @@
                   <span class="burger"></span>
 
                   <ul id="menu"> <!--shows when hamburger is clicked-->
-                    <a href="../index.html"><li>Startsida</li></a>
-                    <a href="../verk.html"><li>Verk</li></a>
-                    <a href="../kontakt.html"><li>Kontakta Oss</li></a>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li onmouseover="addLiVerk()" onmouseout="deleteChild()"><a href="verk.html">Verk</a></li>
+                    <li>
+                        <ul id="menuVerk" class="menuVerk"></ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakta Oss</a></li>
                   </ul>
                 </div>
             </nav>
-            <a class = "navigationLinks" href="../startsida.html">Startsida</a>
+            <a class = "navigationLinks" href="../index.html">Startsida</a>
             <a class = "navigationLinks" href="../verk.html">Verk</a>
             <a class = "navigationLinks" href="../kontakt.html">Kontakta oss</a>
         </div>
-        <h1>Astarte</h1>
-        <p>Roman skriven av Karin Boye utgiven år 1931</p>
+        <h1>Uppgörelse</h1>
+        <p>Roman skriven av Karin Boye utgiven år 1934</p>
     </div>
 
     <div class="info">
         <div class="infoText">
             <h2>Sammanfattning</h2>
-            <p>Astarte är namnet på den gyllene skyltdockan som handlingen kretsar kring. Reklamexperterna kallar henne gudinnan, som begär kroppar och själar som offer. Det är 1930-tal och veckotidningarnas redaktioner brinner, drömmar om lyx och femininet har börjat ta sitt uttryck i den puttrande svenska staden och samtidigt sitter Puh-Li tillsammans med hundrafemtio småflickor i en sidenfabrik på andra sidan världen och sköljer kokonger i det heta vattnet.</p>
+            <p>”Med ett ryck vaknade hon och satte sig upp. Och hela hennes väsen och hela rummet var fyllt av en absolut visshet: JAG SKA DÖ.” (ur Det förändrar saken...)Novellsamlingen Uppgörelser gavs ut första gången 1934. Karin Boye (1900-1941) är en av de stora svenska författarna – en utpräglat tidsmedveten och politiskt radikal berättare som tog upp kampen mot fördomar, kvinnoförtryck, krig och diktatur.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum repudiandae tenetur nam ipsam! Quae dignissimos itaque ipsam nisi, totam, quia dolorem ut neque ducimus porro animi? Aperiam labore provident eaque itaque quasi error sit repudiandae libero, ea, dolorem ipsum dolorum reprehenderit fugiat hic laborum distinctio quaerat, soluta earum deserunt numquam laudantium minima consectetur aut. Sunt deserunt tempora hic, aut est culpa, soluta ut labore nulla exercitationem, temporibus quis. Magnam necessitatibus quidem blanditiis sint nostrum. A fugit aliquam amet accusantium repellat praesentium! Magnam dolorem libero, dolorum sapiente, enim temporibus magni optio ab necessitatibus adipisci amet? Repellat commodi molestiae expedita deleniti ipsa.</p>
         </div>
-        <img src="astarte.jpg" alt="astarteBild">
+        <img src="uppgorelse.jpg" alt="uppgorelseBild">
     </div>
 
     <div class="clear"></div>
@@ -48,5 +51,7 @@
         <p class = "footerText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est accusamus deserunt consectetur mollitia. Est similique iusto eligendi in, ad iure, tempore facilis, impedit voluptatibus nisi odit dolor eum architecto velit repudiandae. Eius quam obcaecati exercitationem? Sequi dicta odio quam.</p>
         <p class = "footerText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis accusantium sunt maiores officia pariatur quod omnis! Non saepe quos fuga, soluta nam, esse laborum vitae sunt culpa eveniet quo molestiae. Ex expedita ipsam, at fugit dicta nulla vel magni!</p>
     </footer>
+
+    <script src="../karinBoye.js"></script>
 </body>
 </html>

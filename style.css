@@ -290,6 +290,14 @@ button{
 }
 
 /*styling for kontakt.html*/
+.omOss{
+    background: crimson;
+    margin: 20px 15% 20px 15%; 
+    width: 70%;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
 .form{
     margin: 20px 15% 20px 15%; 
     width: 70%;
@@ -299,6 +307,7 @@ button{
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 .form div{
@@ -358,4 +367,51 @@ input[type=submit]:hover {
 .info img{
     width: 150px;
     height: 209px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content div {
+    background-color: crimson;
+    border-radius: 5px;
+}
+
+.introduction{
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introduction div {
+    margin: 2%;
+}
+
+.introductionText{
+    width: 60%;
+}
+
+.splide{
+    width: 255px;
+    height: 166px;
+    overflow: hidden;
+    align-self: center;
+    padding-left: 12px;
+}
+
+.kandaVerk{
+    width: 80%;
+    margin: 10px;
+    padding: 1% 75px 1% 75px;
+}
+
+.titel{
+    width: 80%;
+    margin: 10px;
+    padding: 1% 75px 1% 75px;
 }
