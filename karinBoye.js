@@ -1,4 +1,6 @@
-function addLiVerk() { //
+//My plan here was to be able to hover over the underlinks that pop up when hovering over 'Verk' in the hamburger bar to make links to the diffrent pages for the works of karin boye
+
+function addLiVerk() { //function that shows underlinks while hovering over Verk in hamburger bar
     const node = document.createElement("LI");
     node.className = "menuVerkChild";
     const listVerk = ['Romaner','Diktsamlingar', ' Noveller', 'Essäer']
