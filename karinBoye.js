@@ -16,7 +16,7 @@ document.addEventListener( 'DOMContentLoaded', function() { //funtion for fade t
 function addLiVerk() { //function that shows undertitle while hovering over Verk in hamburger bar
     const node = document.createElement("LI");
     node.className = "menuVerkChild";
-    const listVerk = ['Romaner','Diktsamlingar', ' Noveller', 'Essäer']
+    const listVerk = ['Romaner','Diktsamlingar', ' Noveller', 'Essäer'];
 
     for(let i = 0; i < 4; i++){
         let textnode = document.createTextNode(listVerk[i]);
